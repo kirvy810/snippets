@@ -3,8 +3,7 @@ def main():
 
     sieve = [True] * (N + 1)
 
-    sieve[0] = False
-    sieve[1] = False
+    sieve[0] = sieve[1] = False
 
     for i in range(2, N + 1):
         if not sieve[i]:
