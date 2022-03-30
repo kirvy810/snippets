@@ -10,6 +10,7 @@ def main():
             continue
 
         print(i, end=' ')
+        
         for j in range(2 * i, N + 1, i):
             sieve[j] = False
 
