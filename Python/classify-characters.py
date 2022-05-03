@@ -1,3 +1,5 @@
+# Exercise 8 - 12
+
 chars = {
     'uppercase': '',
     'lowercase': '',
