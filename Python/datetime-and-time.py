@@ -28,7 +28,7 @@ def main():
     diff = diff_days(current_date, date)
 
     if diff < 0:
-        print('{}부터 {}일이 지났습니다'.format(date, diff))
+        print('{}부터 {}일이 지났습니다'.format(-date, diff))
     elif diff > 0:
         print('{}까지 {}일이 남았습니다'.format(date, diff))
     else:
