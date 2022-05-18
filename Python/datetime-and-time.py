@@ -16,7 +16,7 @@ def get_day(tm):
     return '월화수목금토일'[tm.tm_wday]
 
 
-def us_date_format(tm):
+def to_us_date(tm):
     return '{}-{}-{}'.format(tm.tm_mday, get_month(tm), tm.tm_year)
 
 
@@ -27,7 +27,7 @@ def main():
     y, m, d = map(int, input('YYYY/MM/DD > ').split('/'))
     date = datetime.date(y, m, d)
 
-    print('오늘은 {}입니다.'.format(us_date_format(now)))
+    print('오늘은 {}입니다.'.format(to_us_date(now)))
 
     diff = diff_days(current_date, date)
 
